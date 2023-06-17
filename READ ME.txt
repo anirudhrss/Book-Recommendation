@@ -1,0 +1,35 @@
+READ ME FILE
+
+Dependencies:
+
+-> Anaconda launcher
+-> Jupyter notebook 
+-> Spider
+-> Python 3.8 and above
+-> Flask
+-> plotly
+-> Dataset (https://www.kaggle.com/jealousleopard/goodreadsbooks)
+
+Steps:
+
+1. Unzip the .py file.
+2. Launch jupyter
+3. From file select open drop down
+4. Navigate to the untitled1.py file in system downloads
+5. Load the file assessment.ipynb
+6. Check python version 
+7. Place the dataset on mentioned location in C:\Users\
+8. Run all the cells from the start by selecting run all from Cell drop down
+9. Type CMD on the search box of computer
+10. In cmd, type "python app.py"
+11. Check the webapp on http://127.0.0.1:8080/
+12.Enter the book name and author name
+13. Now you can see the top 5 recommendations
+14. Open CMD and press CTRL+C to quit
+
+
+FUTURE WORK: 
+
+1.) In future, I plan on introducing more languages on the bases of which recommendations can be made. 
+2.) Will include more features as a part of feature engineering so that the results can be more diverse. 
+3.) Introducing a machine learning model in order to do the feature modeling. It can be content based or collaborative model.
