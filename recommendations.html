@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 3px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .authors {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .similarity {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .back-btn {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .back-btn a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .back-btn a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended Books</h1>
+        <ul>
+            {% for book in recommendations %}
+                <li>
+                    <div class="title">{{ book[0] }}</div>
+                    <div class="authors">by {{ book[1] }}</div>
+                    <div class="similarity">Similarity Score: {{ similarity[loop.index0] }}</div>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="back-btn">
+            <a href="/">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>
